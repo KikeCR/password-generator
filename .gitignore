@@ -1,0 +1,47 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+#pre-commit
+.eslintcache
+
+# testing
+/coverage
+test-report.xml
+
+# production
+build
+stylebuild
+**/*/build
+
+# misc
+.DS_Store
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+/.yalc
+.yalc
+yalc.lock
+
+/.idea
+.idea
+
+.dccache
+
+/.pytest_cache
+
+# audit report
+npm-audit.html
+
+.vscode/*
+!.vscode/settings.json
+
+.yalc
+yalc.lock
+
+/test-results
