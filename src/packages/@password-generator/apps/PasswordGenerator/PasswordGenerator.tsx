@@ -14,7 +14,7 @@ const PasswordGenerator = () => {
 
   return (
     <>
-    <Flex direction="column" align="center" justify="center" h="100vh" gap="8">
+    <Flex direction="column" align="center" justify="center" h={{ base: '100vh', md: '100vh' }} gap="8" bg={{ base: "#F5F5F5", _dark: "#181C14" }}>
       <PasswordGeneratorHeader />
       <Flex gap="4" justify="center" align='center'>
         <Card.Root maxW="sm" width={{ base: '90%', md: '400px' }}>
