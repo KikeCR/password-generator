@@ -7,7 +7,6 @@ function App() {
   return (
     <Provider>
       <div className="password-generator-app">
-        {/* ADD HEADER AND MORE */}
         <PasswordGeneratorView />
       </div>
     </Provider>
