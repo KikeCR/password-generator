@@ -1,7 +1,6 @@
 {
   "name": "password-generator",
   "version": "0.1.0",
-  "homepage": "https://lbarrantes.com/password-generator",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^3.8.1",
