@@ -8,7 +8,13 @@ import { BrowserRouter } from 'react-router-dom'
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 )
-const basename = process.env.NODE_ENV === 'production' ? '/password-generator' : ''
+
+let basename = ''
+// Check the hostname and pathname
+if (window.location.hostname === 'lbarrantes.com' && window.location.pathname.startsWith('/password-generator')) {
+  // Set the basename for production (when hosted at https://lbarrantes.com/password-generator)
+  basename = '/password-generator'
+}
 
 root.render(
   <React.StrictMode>
