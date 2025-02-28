@@ -8,11 +8,11 @@ import { BrowserRouter } from 'react-router-dom'
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 )
-const isRootURL = window.location.pathname === '/'
+const basename = process.env.NODE_ENV === 'production' ? '/password-generator' : ''
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={isRootURL ? '' : '/password-generator'}>
+    <BrowserRouter basename={basename}> 
       <App />
     </BrowserRouter>
   </React.StrictMode>
