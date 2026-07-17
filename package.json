@@ -2,6 +2,7 @@
   "name": "password-generator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/password-generator",
   "dependencies": {
     "@chakra-ui/react": "^3.8.1",
     "@emotion/react": "^11.14.0",
